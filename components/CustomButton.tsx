@@ -1,17 +1,19 @@
 "use client";
-import Image from "next/image"
+import Image from 'next/image';
+import { CustomButtonProps }  from "@/types"
+
 //default all components are server side rendered 
 
-const CustomButton = () => {
+const CustomButton = ({title, containerStyles, handleClick} : CustomButtonProps) => {
   return (
     <button
     disabled={false}
     type={"button"}
-    className={`custom-btn`}
-    onClick={()=>{}}
+    className={`custom-btn ${containerStyles}`}
+    onClick={handleClick}
         >
         <span className={`flex-1`}>
-            Title
+            {title}
         </span>
 
     </button>
@@ -19,3 +21,5 @@ const CustomButton = () => {
 }
 
 export default CustomButton
+
+//turn into a useable component using props
