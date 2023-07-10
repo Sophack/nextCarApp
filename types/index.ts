@@ -5,6 +5,7 @@ export interface CustomButtonProps  {
 containerStyles?: string;
 handleClick?: 
 MouseEventHandler<HTMLButtonElement>;
+btnType: "button" | "submit" | "reset";
 }
 
 //specify the types of props that the component will receive
