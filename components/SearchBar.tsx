@@ -11,6 +11,7 @@ const SearchBar = () => {
     <form className='searchbar' onSubmit={handleSearch}>
         Searchbar
         <div className="search__item">
+            {/* passing the state as props */}
             <SearchManufacturer
             manufacturer={manufacturer}
             setManufacturer={setManufacturer}/>
