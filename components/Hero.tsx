@@ -1,4 +1,6 @@
 import Image from "next/image"
+import CustomButton from "./CustomButton"
+
 
 const Hero = () => {
   return (
@@ -7,6 +9,13 @@ const Hero = () => {
         <h1 className="hero__title">
         Find, book, or rent a car — quickly and easily
           </h1>
+
+        <p className="hero__subtitle">
+        We compare thousands of deals to get you there.
+            </p>
+      
+      
+      <CustomButton/>
 
       </div>
       
