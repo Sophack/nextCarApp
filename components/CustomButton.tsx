@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import { CustomButtonProps }  from "@/types"
+import { CustomButtonProps }  from "@/types";
 
 //default all components are server side rendered 
 
